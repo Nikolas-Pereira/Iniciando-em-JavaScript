@@ -53,20 +53,12 @@ function productDiscount(discount, total){
 
 console.log(productDiscount(15, 200))
 
-const serachInput = document.hetElementById('search-input');
-const serachBrn = document.getElementById('serach-btn');
+function productFees(fees, total)
+{
+    return total+total*fees/100
 
-//adicionando evento ao clicar no botão de pesquisa
-searchBtn.addEventListener('click', () => {
-    const searchTerm = searchInput.value;
-
-});
-
-searchInput.addEventListener('keypress', (event) => {
-    if (event.key === 'Enter') {
-        const searchTerm = searchInput.value;
-    }
-})
+}
+console.log(productFees(10, 200))
 
 
 
