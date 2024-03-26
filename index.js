@@ -127,9 +127,52 @@ console.log(corVendida)
 
 
 
+//Precedência de operadores
 
+let num7 = (3 + 4) * 2
+console.log(num7)
 
+//If....Else
 
+let driverSpeed = 59
+
+if(driverSpeed > 120){
+    console.log("Above speed limit")
+}
+
+else if(driverSpeed >= 120 && driverSpeed <= 130){
+    console.log(" Normaly speed limit")
+    
+}
+
+else {
+    console.log("Below speed limit")
+}
+
+//Switch case
+
+let airPortName="GRU"
+
+switch(airPortName){
+    case "MCO":
+        console.log("Orlando International Airport")
+        break
+    case "GRU":
+        console.log("São Paulo-Guarulhos International Airport")
+        break
+    case "LAX":
+        console.log("Los Angeles International Airport")
+        break
+    case "LHR":
+        console.log("London Heathrow Airport")
+        break
+    case "LAS":
+        console.log("Las Vegas International Airport")
+        break   
+    default:
+        console.log("Airport not found")
+        break
+}
 
 
 
