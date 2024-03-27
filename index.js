@@ -213,4 +213,10 @@ for(let key in myCar){
     console.log(key, myCar[key])
 }
 
+//for... of loop
 
+const friends = ['Gabriel', 'Gabriela', 'Vinicius', 'Camila', 'Alan', 'Gyu']
+
+for(let friend of friends){
+    console.log(friend)
+}
