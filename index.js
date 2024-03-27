@@ -174,6 +174,18 @@ switch(airPortName){
         break
 }
 
+//for loop
 
+for(i=1; i<=10; i++) {
 
-    
+    console.log("Número: ", i)
+}
+
+//while loop
+
+let index = 1
+while(index<=10){
+
+    console.log("Número: ", index)
+    index++
+}
