@@ -183,9 +183,34 @@ for(i=1; i<=10; i++) {
 
 //while loop
 
-let index = 1
-while(index<=10){
+// let index = 1
+// while(index<=10){
 
-    console.log("Número: ", index)
-    index++
+//     console.log("Número: ", index)
+//     index++
+//}
+
+//di while loop 
+
+let index=1
+    do{
+        console.log("número: " ,index);
+        index++;
+    } 
+    while (index<=10)
+
+//for in loop
+
+const myCar = {
+    model: 'Chevrolet',
+    year: 2012,
+    color: 'black',
+    km: 116000
+
 }
+
+for(let key in myCar){
+    console.log(key, myCar[key])
+}
+
+
