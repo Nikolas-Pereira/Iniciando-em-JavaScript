@@ -220,3 +220,104 @@ const friends = ['Gabriel', 'Gabriela', 'Vinicius', 'Camila', 'Alan', 'Gyu']
 for(let friend of friends){
     console.log(friend)
 }
+
+//build in objects
+
+console.log(Math.PI);
+console.log(Math.E);
+console.log(Date());
+console.log(Math.max(2,30,100,120));
+console.log(Math.min(2,30,100,120));
+console.log(Math.floor(3.9));
+console.log(Math.round(3.9));
+
+//string
+
+let message = "hey, whats up?"
+console.log(message.startsWith("hey"));
+console.log(message.endsWith("Up?"));
+console.log(message.includes("up"));
+console.log(message.length);
+
+//template literals
+
+let name = "Nikolas"
+const email = 'Hi ' + name + ', \n The meet is scheduled for 10AM\n'; 
+const email2 = `hi ${name}, 
+The meet is scheduled for 10AM`;
+
+console.log(email, email2);
+
+//array
+
+const random = ["marcos", 1, true];
+console.log(random);
+
+//add intem array
+
+
+let num = [7,8,9];
+num.push(10);
+num.unshift(1,2,3); //adicionar na array
+num.splice(3,0,4,5,6);
+
+console.log(num);
+
+num.pop(); //retirar o ultimo item  da array
+num.shift(); //returar o primeiro
+num.splice(3,3); //retirar o indexador da array
+
+//Clean an Array
+
+//num = [];
+//num.length = 0;
+//num.splice(0, num.length);
+
+
+//Concatenate arrays
+
+let letters = ['a', 'b', 'c'];
+all = num.concat(letters);
+console.log(all);
+
+half = all.slice(3, 5);
+console.log(half);
+
+console.log(num);
+
+//joining array
+
+let clients = ['Gabriel', 'Gabriela', 'Vinicius', 'Camila', 'Alan', 'Giu']
+
+console.log(clients)
+
+let clientsJoin = clients.join(', ');
+console.log(clientsJoin);
+
+//Organizar de forma alfabetica
+
+clients.sort();
+console.log(clients);
+clients.reverse();
+console.log(clients.reverse);
+
+
+
+//Localizando intens dentro de uma array primitiva
+
+//console.log(num.indexOf(10));
+//console.log(num.includes(21));
+
+//array de referência
+
+const movies = [
+        { id: 1, title: "The Matrix", rating: 5 },
+        { id: 2, title: "The Matrix Reloaded", rating: 4 },
+        { id: 3, title: "The Matrix Revolutions", rating: 3 },
+    ]
+
+console.log(movies.find(movies => movies.title === "The Matrix"))
+
+//arrow functions (por exemplo barra de pesquisa "filtros")
+
+console.log(movies.find(movies=>movies.id === 2))
